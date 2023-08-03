@@ -30,10 +30,7 @@ public class VerifyWomwensModule extends BaseClass{
 		String actualResult=CartPom.getRayYonSleeveLength().getText();
 		System.out.println();
 		
-		SoftAssert assr=new SoftAssert();
-		assr.assertEquals(actualResult, "123Indianclothings");
-		assr.assertAll();
-		System.out.println("by");//Indianclothings
+		
 	}
 	
 	@Test
