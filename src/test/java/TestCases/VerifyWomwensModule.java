@@ -41,6 +41,7 @@ public class VerifyWomwensModule extends BaseClass{
 		Thread.sleep(2000);
 		Womens womensPom = new Womens(driver);
 		womensPom.getwomenkurthiAddToCartButton().click();
+		System.out.println("done");
 	}
 	
 }
