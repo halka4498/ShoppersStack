@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CartPage {
+public class CartPageTest {
 
 	public WebDriver driver;
 	
-	public CartPage(WebDriver driver) {
+	public CartPageTest(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	

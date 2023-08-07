@@ -5,16 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPageTest {
 
 	WebDriver driver;
 	
-	//Initialization
-	public LoginPage(WebDriver driver){
+	
+	public LoginPageTest(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
 	
-	//declaratrion
+	
 	@FindBy(id="Email")
 	private WebElement EmailTextField;
 	
