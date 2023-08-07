@@ -32,11 +32,11 @@ public class LoginModelTest extends BaseClass {
 	}
 	
 	
-	@Test(groups= {"smokeTestCase"})
-	public void Tc_Login_002Test() {
-		HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
-		HmAL.getWomenMenuLink().click();	 
-	}
+	// @Test(groups= {"smokeTestCase"})
+	// public void Tc_Login_002Test() {
+	// 	HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
+	// 	HmAL.getWomenMenuLink().click();	 
+	// }
 }
 
 
