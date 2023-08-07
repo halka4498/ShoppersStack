@@ -25,18 +25,18 @@ public class LoginModelTest extends BaseClass {
 	
 	
 	
-	@Test(groups= {"smokeTestCase","regrationTestcase"})
-    public  void FirstTestCaseTest() throws IOException, Throwable {		
-		HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
-	HmAL.getMenMenuLink().click();
-	}
-	
-	
-	// @Test(groups= {"smokeTestCase"})
-	// public void Tc_Login_002Test() {
+	// @Test(groups= {"smokeTestCase","regrationTestcase"})
+ //    public  void FirstTestCaseTest() throws IOException, Throwable {		
 	// 	HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
-	// 	HmAL.getWomenMenuLink().click();	 
+	// HmAL.getMenMenuLink().click();
 	// }
+	
+	
+	@Test(groups= {"smokeTestCase"})
+	public void Tc_Login_002Test() {
+		HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
+		HmAL.getWomenMenuLink().click();	 
+	}
 }
 
 
