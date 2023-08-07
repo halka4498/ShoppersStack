@@ -6,18 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.Parameters;
 
-import PomClasses.HomePageAfterLogin;
-import PomClasses.HomePageBeforeLogin;
-import PomClasses.LoginPage;
+
+import PomClasses.HomePageAfterLoginTest;
+
+import PomClasses.HomePageBeforeLoginTest;
+
+import PomClasses.LoginPageTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
 	public static WebDriver driver;
 	
-	//@Parameters("BROWSER")//String BROWSER
+	
 	@org.testng.annotations.BeforeClass
 	public void BeforeClass() throws Throwable {
 		
@@ -61,10 +63,10 @@ public class BaseClass {
 		
 		driver.navigate().refresh();
 		
-		HomePageBeforeLogin HBL = new HomePageBeforeLogin(driver);
+		HomePageBeforeLoginTest HBL = new HomePageBeforeLoginTest(driver);
 	    HBL.getLoginMainButton().click();
 	    
-	    LoginPage Lp = new LoginPage(driver);
+	    LoginPageTest Lp = new LoginPageTest(driver);
 	    
 	    Lp.getEmailTextField().sendKeys(Email);
 	    Lp.getPassTextField().sendKeys(Pass);
@@ -75,7 +77,7 @@ public class BaseClass {
 	@org.testng.annotations.AfterMethod
 	public void AfterMethod() throws Throwable {
 	Thread.sleep(3000);
-	HomePageAfterLogin HomePageEle = new HomePageAfterLogin(driver);
+	HomePageAfterLoginTest HomePageEle = new HomePageAfterLoginTest(driver);
 	HomePageEle.getAccountSettingIcon().click();
 	HomePageEle.getLogoutIcon().click();	
 	}

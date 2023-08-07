@@ -5,19 +5,21 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import PomClasses.CartPage;
-import PomClasses.HomePageAfterLogin;
+
+import PomClasses.CartPageTest;
+
+import PomClasses.HomePageAfterLoginTest;
 import PomClasses.Womens;
 import Utilities.BaseClass;
 
 
 @Listeners(Utilities.ListnersImplementation.class)
-public class VerifyWomwensModule extends BaseClass{
+public class VerifyWomwensModuleTest extends BaseClass{
 
-	@Test//(groups= {"regrationTestcase"})
-	public void Tc_Women_003() throws Throwable {
+	@Test
+	public void Tc_Women_003Test() throws Throwable {
 		Thread.sleep(3000);
-		HomePageAfterLogin HPAL = new HomePageAfterLogin(driver);
+		HomePageAfterLoginTest HPAL = new HomePageAfterLoginTest(driver);
 		HPAL.getWomenMenuLink().click();
 		
 		
@@ -26,7 +28,7 @@ public class VerifyWomwensModule extends BaseClass{
 		
 		HPAL.getMainCartIcon().click();
 		
-		CartPage CartPom = new CartPage(driver);
+		CartPageTest CartPom = new CartPageTest(driver);
 		String actualResult=CartPom.getRayYonSleeveLength().getText();
 		System.out.println();
 		
@@ -34,11 +36,11 @@ public class VerifyWomwensModule extends BaseClass{
 	}
 	
 	@Test
-	public void Tc_Women_004() throws Throwable {
-		HomePageAfterLogin HPAL = new HomePageAfterLogin(driver);
-		HPAL.getWomenMenuLink().click();
+	public void Tc_Women_004Test() throws Throwable {
+		HomePageAfterLoginTest HPAL1 = new HomePageAfterLoginTest(driver);
+		HPAL1.getWomenMenuLink().click();
 		
-		Thread.sleep(2000);
+		
 		Womens womensPom = new Womens(driver);
 		womensPom.getwomenkurthiAddToCartButton().click();
 		System.out.println("done");

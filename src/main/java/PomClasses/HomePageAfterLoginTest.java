@@ -1,5 +1,7 @@
 package PomClasses;
 
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import Utilities.WebDriverUtilities;
 
-public class HomePageAfterLogin {
+public class HomePageAfterLoginTest {
 
 	public WebDriver driver;
 	
-	public HomePageAfterLogin(WebDriver driver){
+	public HomePageAfterLoginTest(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -24,7 +26,7 @@ public class HomePageAfterLogin {
 	@FindBy(xpath="//*[name()='svg' and @data-testid='LogoutIcon']")
 	private WebElement LogoutIcon;
 	
-	@FindBy(xpath="//a[text()='Women']")
+	@FindBy(id="women")
 	private WebElement WomenMenuLink;
 	
 	@FindBy(id="kids")

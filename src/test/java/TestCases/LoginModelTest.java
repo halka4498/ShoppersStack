@@ -14,26 +14,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import PomClasses.HomePageAfterLogin;
-import PomClasses.HomePageBeforeLogin;
-import PomClasses.LoginPage;
+
+import PomClasses.HomePageAfterLoginTest;
+
+
 import Utilities.BaseClass;
 import Utilities.DataUtilities;
 
-public class LoginModel extends BaseClass {
+public class LoginModelTest extends BaseClass {
 	
 	
 	
 	@Test(groups= {"smokeTestCase","regrationTestcase"})
-    public  void TC_Login_001() throws IOException, Throwable {		
-		HomePageAfterLogin HmAL = new HomePageAfterLogin(driver);
+    public  void FirstTestCaseTest() throws IOException, Throwable {		
+		HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
 	HmAL.getMenMenuLink().click();
 	}
 	
 	
 	@Test(groups= {"smokeTestCase"})
-	public void Tc_Login_002() {
-		HomePageAfterLogin HmAL = new HomePageAfterLogin(driver);
+	public void Tc_Login_002Test() {
+		HomePageAfterLoginTest HmAL = new HomePageAfterLoginTest(driver);
 		HmAL.getWomenMenuLink().click();	 
 	}
 }

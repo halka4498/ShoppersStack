@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePageBeforeLogin {
+public class HomePageBeforeLoginTest {
 
 	WebDriver driver;
 	
-	public HomePageBeforeLogin(WebDriver driver){
+	public HomePageBeforeLoginTest(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
 	
