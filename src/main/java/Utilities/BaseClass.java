@@ -7,11 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-
 import PomClasses.HomePageAfterLoginTest;
-
 import PomClasses.HomePageBeforeLoginTest;
-
 import PomClasses.LoginPageTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 

@@ -37,6 +37,7 @@ public class VerifyWomwensModuleTest extends BaseClass{
 	
 	@Test
 	public void Tc_Women_004Test() throws Throwable {
+		Thread.sleep(3000);
 		HomePageAfterLoginTest HPAL1 = new HomePageAfterLoginTest(driver);
 		HPAL1.getWomenMenuLink().click();
 		

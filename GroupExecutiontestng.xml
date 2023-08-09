@@ -3,13 +3,13 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="regrationTestcase"></include>
+			<include name="regrationTestcaseTest"></include>
 		</run>
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCases.VerifyWomwensModule"/>
-      <class name="TestCases.LoginModel"/>
+      <class name="TestCases.VerifyWomwensModuleTest"/>
+      <class name="TestCases.LoginModelTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

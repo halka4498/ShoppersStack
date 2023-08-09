@@ -3,14 +3,14 @@
 <suite parallel="tests" name="Suite">
   <test thread-count="5" parallel="tests" name="Test">
     <classes>
-      <class name="TestCases.VerifyWomwensModule"/>
+      <class name="TestCases.VerifyWomwensModuleTest"/>
      
     </classes>
   </test> <!-- Test -->
    <test thread-count="5" parallel="tests" name="Test1">
     <classes>
      
-      <class name="TestCases.LoginModel"/>
+      <class name="TestCases.LoginModelTest"/>
     </classes>
   </test> 
 </suite> <!-- Suite -->
