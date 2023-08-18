@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.VerifyWomwensModule">
+      <class name="TestCases.VerifyWomwensModuleTest">
         <methods>
           <include name="AfterMethod"/>
           <include name="BeforeClass"/>
-          <include name="Tc_Women_003"/>
+          <include name="Tc_Women_003Test"/>
+          <include name="Tc_Women_004Test"/>
           <include name="BeforeMethod"/>
           <include name="AfterClass"/>
         </methods>
-      </class> <!-- TestCases.VerifyWomwensModule -->
+      </class> <!-- TestCases.VerifyWomwensModuleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

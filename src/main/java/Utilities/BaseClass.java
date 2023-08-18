@@ -21,7 +21,7 @@ public class BaseClass {
 	public void BeforeClass() throws Throwable {
 		
 		DataUtilities dataProperties = new DataUtilities();
-		String BROWSER=dataProperties.dataFromPropertiesFile("./src/test/resources/data.properties", "Browser");
+		String BROWSER=dataProperties.dataFromPropertiesFile("C:/eclipse-workspace/shoppersstack/src/test/resources/data.properties", "BROWSER");
 		
 		if(BROWSER.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -44,7 +44,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		
-		String URL=dataProperties.dataFromPropertiesFile("./src/test/resources/data.properties", "url");
+		String URL=dataProperties.dataFromPropertiesFile("C:/eclipse-workspace/shoppersstack/src/test/resources/data.properties","URL");
 		driver.get(URL);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -55,8 +55,8 @@ public class BaseClass {
 	@org.testng.annotations.BeforeMethod
 	public void BeforeMethod() throws Throwable {
 		DataUtilities dataProperties = new DataUtilities();
-		String Email=dataProperties.dataFromExcel("C:\\dataExel\\DataExel.xlsx", "Sheet1", 1, 1);
-		String Pass=dataProperties.dataFromExcel("C:\\dataExel\\DataExel.xlsx", "Sheet1", 1, 2);
+		String Email=dataProperties.dataFromExcel("C:\\eclipse-workspace\\shoppersstack\\DataExcell.xlsx","Sheet1", 1, 1);
+		String Pass=dataProperties.dataFromExcel("C:\\eclipse-workspace\\shoppersstack\\DataExcell.xlsx","Sheet1", 1, 2);
 		
 		driver.navigate().refresh();
 		
